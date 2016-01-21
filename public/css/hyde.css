@@ -296,3 +296,8 @@ a:hover, a h2:hover, a span:hover {color: #91A7B4; text-decoration: none;}
     padding: 8px 10px;
     font-size: inherit;
 }
+
+.profile-pic {
+  display: inline-block;
+  width:100px;
+}
