@@ -1,5 +1,6 @@
 ---
 layout: post
+permalink: instagrams-confounding-update
 title: Instagram's Confounding Update
 image: /public/images/2015-04-28_side-img.jpg
 ---

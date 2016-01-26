@@ -1,5 +1,6 @@
 ---
 layout: post
+permalink: a-note-for-neubible
 title: A Note For NeuBible
 image: /public/images/2015-04-06_side-img.jpg
 ---

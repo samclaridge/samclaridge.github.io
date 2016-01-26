@@ -1,6 +1,6 @@
 ---
 layout: post
-slug: title
+permalink: why-am-i-here
 title: Why Am I Here?
 image: /public/images/2015-2-17_side-img.jpg
 ---
