@@ -2,7 +2,7 @@
 layout: post
 permalink: why-am-i-here
 title: Why Am I Here?
-image: /public/images/2015-2-17_side-img.jpg
+image: /public/images/2015-02-17_side-img.jpg
 ---
 
 Well, that's a great question. Here is a brief explanation and, by way of introduction, detail of why this blog exists.
