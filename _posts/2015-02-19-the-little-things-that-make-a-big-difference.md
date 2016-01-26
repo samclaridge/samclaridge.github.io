@@ -1,5 +1,6 @@
 ---
 layout: post
+permalink: the-little-things-that-make-a-big-difference
 title: The Little Things That Make A Big Difference
 image: /public/images/2015-02-19_side-img.jpg
 ---

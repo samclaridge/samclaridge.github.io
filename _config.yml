@@ -3,7 +3,7 @@ markdown:         redcarpet
 highlighter:      pygments
 
 # Permalinks
-permalink:        pretty
+permalink:        date
 
 # Setup
 title:            Sam Claridge
@@ -25,3 +25,11 @@ github:
   repo:           https://github.com/samclaridge/samclaridge.github.io
 
 gems:             [jekyll-paginate]
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
