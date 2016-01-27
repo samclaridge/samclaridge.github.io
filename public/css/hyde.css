@@ -21,7 +21,6 @@
  * Sidebar
  * Container
  * Reverse layout
- * Themes
  */
 
 
@@ -30,21 +29,6 @@
  *
  * Update the foundational and global aspects of the page.
  */
-
-html {
-  font-family: "kepler-std", serif;
-  font-weight: 300;
-}
-@media (min-width: 48em) {
-  html {
-    font-size: 18px;
-  }
-}
-@media (min-width: 58em) {
-  html {
-    font-size: 22px;
-  }
-}
 
 
 /*
@@ -62,16 +46,23 @@ html {
   background-image: url(/public/trees.jpg);
   background-size: cover;
   background-position: 20%;
+  text-align: center;
+  font-family: "neuzeit-grotesk", sans-serif;
 }
-@media (min-width: 48em) {
+
+@media (min-width: 50rem) {
   .sidebar {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     width: 44%;
-    text-align: center;
-    font-family: "neuzeit-grotesk", sans-serif;
+  }
+}
+
+@media (max-width: 49rem) {
+  .sidebar {
+    height:20rem;
   }
 }
 
@@ -109,7 +100,7 @@ a.sidebar-nav-item:focus {
  * contents to the bottom of the sidebar in tablets and up.
  */
 
-@media (min-width: 48em) {
+@media (min-width: 50rem) {
   .sidebar-sticky {
     position: absolute;
     right:  1rem;
@@ -118,6 +109,11 @@ a.sidebar-nav-item:focus {
   }
 }
 
+@media (min-width: 50rem) and (max-height: 30rem){
+  .sidebar-sticky {
+    bottom: 1rem;
+  }
+}
 
 /* Container
  *
@@ -126,22 +122,33 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
-  padding: 60px;
+  padding: 2rem;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 50rem) {
   .content {
     margin-left: 44%;
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 64rem) {
   .content {
     /*margin-left: 22rem;
     margin-right: 4rem;*/
   }
 }
 
+@media (max-width: 50rem) {
+  .content {
+    padding:1.5rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .content {
+    padding:1rem;
+  }
+}
 
 /*
  * Reverse layout
@@ -149,7 +156,7 @@ a.sidebar-nav-item:focus {
  * Flip the orientation of the page by placing the `.sidebar` on the right.
  */
 
-@media (min-width: 48em) {
+@media (min-width: 48rem) {
   .layout-reverse .sidebar {
     left: auto;
     right: 0;
@@ -160,94 +167,11 @@ a.sidebar-nav-item:focus {
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 64rem) {
   .layout-reverse .content {
     margin-left: 4rem;
     margin-right: 22rem;
   }
-}
-
-
-
-/*
- * Themes
- *
- * As of v1.1, Hyde includes optional themes to color the sidebar and links
- * within blog posts. To use, add the class of your choosing to the `body`.
- */
-
-/* Base16 (http://chriskempson.github.io/base16/#default) */
-
-/* Red */
-.theme-base-08 .sidebar {
-  background-color: #ac4142;
-}
-.theme-base-08 .content a,
-.theme-base-08 .related-posts li a:hover {
-  color: #ac4142;
-}
-
-/* Orange */
-.theme-base-09 .sidebar {
-  background-color: #d28445;
-}
-.theme-base-09 .content a,
-.theme-base-09 .related-posts li a:hover {
-  color: #d28445;
-}
-
-/* Yellow */
-.theme-base-0a .sidebar {
-  background-color: #f4bf75;
-}
-.theme-base-0a .content a,
-.theme-base-0a .related-posts li a:hover {
-  color: #f4bf75;
-}
-
-/* Green */
-.theme-base-0b .sidebar {
-  background-color: #90a959;
-}
-.theme-base-0b .content a,
-.theme-base-0b .related-posts li a:hover {
-  color: #90a959;
-}
-
-/* Cyan */
-.theme-base-0c .sidebar {
-  background-color: #75b5aa;
-}
-.theme-base-0c .content a,
-.theme-base-0c .related-posts li a:hover {
-  color: #75b5aa;
-}
-
-/* Blue */
-.theme-base-0d .sidebar {
-  background-color: #6a9fb5;
-}
-.theme-base-0d .content a,
-.theme-base-0d .related-posts li a:hover {
-  color: #6a9fb5;
-}
-
-/* Magenta */
-.theme-base-0e .sidebar {
-  background-color: #aa759f;
-}
-.theme-base-0e .content a,
-.theme-base-0e .related-posts li a:hover {
-  color: #aa759f;
-}
-
-/* Brown */
-.theme-base-0f .sidebar {
-  background-color: #8f5536;
-}
-.theme-base-0f .content a,
-.theme-base-0f .related-posts li a:hover {
-  color: #8f5536;
 }
 
 
@@ -269,16 +193,26 @@ a:hover, a h2:hover, a span:hover {color: #91A7B4; text-decoration: none;}
   margin-bottom: 1.1rem;
 }
 
-.lead {
-  font-size:.8rem;
-}
 
 .header h1, .header .post-date {
   color: #fff;
   text-shadow: 0px 0px 18px rgba(0, 0, 0, 0.3);
 }
 .header h1 {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
+}
+
+@media (max-width: 60rem){
+  .header h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 50rem){
+  .header h1 {
+    font-size: 2.1rem;
+    margin-top: 1.8rem;
+  }
 }
 
 .sidebar .icon{

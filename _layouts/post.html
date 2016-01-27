@@ -2,7 +2,9 @@
 layout: default
 ---
 {% include sidebar-post.html %}
-<div class="post">
+<div class="content container post">
 
   {{ content }}
+
+  {% include disqus.html %}
 </div>
