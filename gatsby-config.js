@@ -3,7 +3,7 @@ module.exports = {
     title: `Sam Claridge`,
     author: `Sam Claridge`,
     description: `Interweb home for Sam Claridge`,
-    siteUrl: `https://samclaridge.com/`,
+    siteUrl: `https://samclaridge.co/`,
     social: {
       twitter: `kylemathews`,
     },
@@ -63,7 +63,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/icon.png`,
       },
     },
     `gatsby-plugin-offline`,
